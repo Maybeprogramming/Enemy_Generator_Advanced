@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
 
 [RequireComponent(typeof(Enemy))]
 public class Mover : MonoBehaviour

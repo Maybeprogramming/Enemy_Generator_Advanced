@@ -6,8 +6,8 @@ public class Enemy : MonoBehaviour
 
     public Transform Target => _target;
 
-    public void Init(Transform targetPosition)
+    public void Init(Transform target)
     {
-        _target = targetPosition;
+        _target = target;
     }
 }
