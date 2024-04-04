@@ -29,9 +29,9 @@ public class EnemiesMover : MonoBehaviour
         _spawner.Spawned -= OnAddingEnemyToList;
     }
 
-    private void OnAddingEnemyToList(GameObject enemy)
+    private void OnAddingEnemyToList(Enemy enemy)
     {
-        _enemies.Add(enemy);
+        _enemies.Add(enemy.gameObject);
     }
 
     private void Update()
