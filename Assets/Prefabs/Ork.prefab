@@ -178,6 +178,7 @@ GameObject:
   - component: {fileID: 5971594956716648674}
   - component: {fileID: 4442325293323501102}
   - component: {fileID: 4684996603145954164}
+  - component: {fileID: -3907950900176480505}
   m_Layer: 0
   m_Name: Ork
   m_TagString: Untagged
@@ -236,6 +237,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _target: {fileID: 0}
+--- !u!114 &-3907950900176480505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4262454604745931893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ecd6cce102a0654fb7ef74945d88735, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemy: {fileID: 0}
+  _speed: 3
 --- !u!1 &4335417707884870062
 GameObject:
   m_ObjectHideFlags: 0

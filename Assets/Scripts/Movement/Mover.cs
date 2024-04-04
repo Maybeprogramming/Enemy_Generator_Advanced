@@ -1,18 +1,35 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
+[RequireComponent(typeof(Enemy))]
 public class Mover : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Enemy _enemy;
+    [SerializeField] private float _speed;
+
+    private void Start()
     {
-        
+        _enemy = GetComponent<Enemy>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        Move();
+        RemoveByTargetFinished();
+    }
+
+    private void Move()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, _enemy.Target.position, Time.deltaTime * _speed);
+        transform.LookAt(_enemy.Target);
+    }
+
+    private void RemoveByTargetFinished()
+    {
+        if (transform.position == _enemy.Target.position)
+        {
+            Destroy(gameObject);
+        }
     }
 }
