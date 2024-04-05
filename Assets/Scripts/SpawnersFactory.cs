@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class SpawnersFactory : MonoBehaviour
@@ -33,7 +32,6 @@ public class SpawnersFactory : MonoBehaviour
     private void OnSpawned()
     {
         int spawnerIndex = _random.Next(0, _spawners.Count);
-        Debug.Log(spawnerIndex);
         _spawners[spawnerIndex].OnSpawned();
     }
 
@@ -42,7 +40,7 @@ public class SpawnersFactory : MonoBehaviour
         for (int i = 0; i < _points.Length; i++)
         {
             var spawner = Instantiate(_spawnerTemplate, _points[i]);
-            spawner.Init(_enemiesTemplates[i], _targets[i], _timer);
+            spawner.Init(_enemiesTemplates[i], _targets[i]);
             _spawners.Add(spawner);
         }
     }
