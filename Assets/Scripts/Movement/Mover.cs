@@ -3,8 +3,9 @@ using UnityEngine;
 [RequireComponent(typeof(Enemy))]
 public class Mover : MonoBehaviour
 {
-    [SerializeField] private Enemy _enemy;
     [SerializeField] private float _speed;
+
+    private Enemy _enemy;
 
     private void Start()
     {
