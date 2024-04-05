@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
@@ -9,6 +8,12 @@ public class Spawner : MonoBehaviour
     [SerializeField] private Enemy _enemyTemplate;
 
     public Transform Target => _target.transform;
+
+    public void Init(Enemy enemy, Target target)
+    {
+        _enemyTemplate = enemy;
+        _target = target;
+    }
 
     private void Start()
     {
@@ -34,11 +39,5 @@ public class Spawner : MonoBehaviour
         Enemy enemy = Instantiate(_enemyTemplate, spawnPosition.position, Quaternion.identity); ;
         enemy.Init(target);
         return enemy;
-    }
-
-    public void Init(Enemy enemy, Target target)
-    {
-        _enemyTemplate = enemy;
-        _target = target;
     }
 }
