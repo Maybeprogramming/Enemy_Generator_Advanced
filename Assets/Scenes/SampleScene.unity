@@ -464,6 +464,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: Golem (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3460430531301897210, guid: 3d67a3da30548d943a7c69ab8ce47add, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3460430531301897210, guid: 3d67a3da30548d943a7c69ab8ce47add, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 3460430531301897210, guid: 3d67a3da30548d943a7c69ab8ce47add, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794290211143379510, guid: 3d67a3da30548d943a7c69ab8ce47add, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794290211143379510, guid: 3d67a3da30548d943a7c69ab8ce47add, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465670219135330120, guid: 3d67a3da30548d943a7c69ab8ce47add, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465670219135330120, guid: 3d67a3da30548d943a7c69ab8ce47add, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982326346205024810, guid: 3d67a3da30548d943a7c69ab8ce47add, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982326346205024810, guid: 3d67a3da30548d943a7c69ab8ce47add, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.76
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -595,10 +631,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3040883453380634804, guid: 3d67a3da30548d943a7c69ab8ce47add, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3255666585480067097, guid: 3d67a3da30548d943a7c69ab8ce47add, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -646,6 +678,38 @@ PrefabInstance:
     - target: {fileID: 3261411390291338755, guid: 3d67a3da30548d943a7c69ab8ce47add, type: 3}
       propertyPath: m_Name
       value: Golem
+      objectReference: {fileID: 0}
+    - target: {fileID: 3460430531301897210, guid: 3d67a3da30548d943a7c69ab8ce47add, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 3460430531301897210, guid: 3d67a3da30548d943a7c69ab8ce47add, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794290211143379510, guid: 3d67a3da30548d943a7c69ab8ce47add, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794290211143379510, guid: 3d67a3da30548d943a7c69ab8ce47add, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465670219135330120, guid: 3d67a3da30548d943a7c69ab8ce47add, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465670219135330120, guid: 3d67a3da30548d943a7c69ab8ce47add, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982326346205024810, guid: 3d67a3da30548d943a7c69ab8ce47add, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982326346205024810, guid: 3d67a3da30548d943a7c69ab8ce47add, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.99
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -718,6 +782,30 @@ PrefabInstance:
     - target: {fileID: 3261411390291338755, guid: 3d67a3da30548d943a7c69ab8ce47add, type: 3}
       propertyPath: m_Name
       value: Golem (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794290211143379510, guid: 3d67a3da30548d943a7c69ab8ce47add, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794290211143379510, guid: 3d67a3da30548d943a7c69ab8ce47add, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465670219135330120, guid: 3d67a3da30548d943a7c69ab8ce47add, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465670219135330120, guid: 3d67a3da30548d943a7c69ab8ce47add, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982326346205024810, guid: 3d67a3da30548d943a7c69ab8ce47add, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982326346205024810, guid: 3d67a3da30548d943a7c69ab8ce47add, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
