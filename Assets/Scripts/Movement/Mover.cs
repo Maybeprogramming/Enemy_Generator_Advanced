@@ -15,7 +15,7 @@ public class Mover : MonoBehaviour
     private void Update()
     {
         Move();
-        RemoveByTargetFinished();
+        RemoveByFinished();
     }
 
     private void Move()
@@ -24,7 +24,7 @@ public class Mover : MonoBehaviour
         transform.LookAt(_enemy.Target);
     }
 
-    private void RemoveByTargetFinished()
+    private void RemoveByFinished()
     {
         if (transform.position == _enemy.Target.position)
         {

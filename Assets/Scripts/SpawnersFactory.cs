@@ -14,9 +14,9 @@ public class SpawnersFactory : MonoBehaviour
 
     private System.Random _random = new System.Random();
 
-    private void Awake()
+    private void Start()
     {
-        FillSpawners();
+        _spawners = FillSpawners();
     }
 
     private void OnEnable()
@@ -32,16 +32,20 @@ public class SpawnersFactory : MonoBehaviour
     private void OnSpawned()
     {
         int spawnerIndex = _random.Next(0, _spawners.Count);
-        _spawners[spawnerIndex].OnSpawned();
+        _spawners[spawnerIndex].SpawnEnemy();
     }
 
-    private void FillSpawners()
+    private List<Spawner> FillSpawners()
     {
+        List<Spawner> spawners = new List<Spawner>();
+
         for (int i = 0; i < _points.Length; i++)
         {
             var spawner = Instantiate(_spawnerTemplate, _points[i]);
             spawner.Init(_enemiesTemplates[i], _targets[i]);
-            _spawners.Add(spawner);
+            spawners.Add(spawner);
         }
+
+        return spawners;
     }
 }

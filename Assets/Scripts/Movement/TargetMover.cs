@@ -1,18 +1,21 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class TargetMover : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private float _speed;
+    [SerializeField] private List<Transform> _waypoints;
 
-    // Update is called once per frame
-    void Update()
+    private int _currentWaypoint = 0;
+
+    private void Update()
     {
-        
+        if (transform.position == _waypoints[_currentWaypoint].position)
+        {
+            _currentWaypoint = (_currentWaypoint + 1) % _waypoints.Count;
+        }
+
+        transform.position = Vector3.MoveTowards(transform.position, _waypoints[_currentWaypoint].position, _speed * Time.deltaTime);
+        transform.LookAt(_waypoints[_currentWaypoint].position);
     }
 }

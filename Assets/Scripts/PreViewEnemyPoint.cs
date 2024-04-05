@@ -1,4 +1,4 @@
 using UnityEngine;
 
-[RequireComponent(typeof(PreViewEnemyPoint))]
-public class PreViewEnemyPoint : MonoBehaviour{}
+[RequireComponent(typeof(PreviewEnemyPoint))]
+public class PreviewEnemyPoint : MonoBehaviour{}

@@ -3,7 +3,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     [SerializeField] private SpawnPoint _spawnpoint;
-    [SerializeField] private PreViewEnemyPoint _preViewEnemyPoint;
+    [SerializeField] private PreviewEnemyPoint _previewEnemyPoint;
     [SerializeField] private Target _target;
     [SerializeField] private Enemy _enemyTemplate;
 
@@ -15,23 +15,24 @@ public class Spawner : MonoBehaviour
         _target = target;
     }
 
+    public void SpawnEnemy()
+    {
+        CreateEnemy(_spawnpoint.transform, Target);
+    }
+
     private void Start()
     {
         _spawnpoint = GetComponentInChildren<SpawnPoint>();
-        _preViewEnemyPoint = GetComponentInChildren<PreViewEnemyPoint>();
+        _previewEnemyPoint = GetComponentInChildren<PreviewEnemyPoint>();
 
-        var previewEnemy = Instantiate(_enemyTemplate, _preViewEnemyPoint.transform);
-        previewEnemy.GetComponent<Mover>().enabled = false;
-        previewEnemy.GetComponent<Animator>().enabled = false;
-        Color color = Color.white;
-        color.a = 0.2f;
-        //MeshRenderer meshRenderer = FindObjectOfType<MeshRenderer>(previewEnemy);
-        //meshRenderer.material.color = color;
+        CreatePreviewEnemy();
     }
 
-    public void OnSpawned()
+    private void CreatePreviewEnemy()
     {
-        CreateEnemy(_spawnpoint.transform, Target);
+        Enemy previewEnemy = Instantiate(_enemyTemplate, _previewEnemyPoint.transform);
+        previewEnemy.GetComponent<Mover>().enabled = false;
+        previewEnemy.GetComponent<Animator>().enabled = false;
     }
 
     private Enemy CreateEnemy(Transform spawnPosition, Transform target)

@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spawnpoint: {fileID: 0}
-  _preViewEnemyPoint: {fileID: 0}
+  _previewEnemyPoint: {fileID: 0}
   _target: {fileID: 0}
   _enemyTemplate: {fileID: 0}
 --- !u!1 &2642428344723550182
@@ -61,7 +61,7 @@ GameObject:
   m_Component:
   - component: {fileID: 826394867632054845}
   - component: {fileID: 8940909894599878384}
-  - component: {fileID: 1680466168889154079}
+  - component: {fileID: 2805685807744309033}
   m_Layer: 0
   m_Name: PreviewEnemyPoint
   m_TagString: Untagged
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 10
---- !u!114 &1680466168889154079
+--- !u!114 &2805685807744309033
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
